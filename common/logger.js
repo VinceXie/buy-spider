@@ -1,7 +1,7 @@
 /**
  * Created by vincexie on 2017/1/16.
  */
-var log4js = require('log4js');
+var log4js = require('log4js')
 var rm = require('rimraf')
 log4js.configure({
   appenders: [
@@ -11,9 +11,9 @@ log4js.configure({
       category: 'spider'}
   ],
   replaceConsole: true
-});
+})
 
-var logger = log4js.getLogger('spider');
+var logger = log4js.getLogger('spider')
 
 var clearLog = function () {
   rm('./logs/spider.log',function () {

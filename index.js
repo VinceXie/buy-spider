@@ -1,7 +1,7 @@
 /**
  * Created by vincexie on 2017/3/21.
  */
-const phantom = require('phantom');
+const phantom = require('phantom')
 
 function timeout(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
