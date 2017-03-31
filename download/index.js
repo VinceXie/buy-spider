@@ -200,9 +200,9 @@ let parseDetailJuMobile = function (body,item) {
   // item.itemImgs = itemImgs
   let shop = {}
   shop.title = toChinese($('#J_shopH5Desc .shopdes .shopname').html())
-  shop.descRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(0).html()
-  shop.serRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(1).html()
-  shop.expRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(2).html()
+  shop.descRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(0).html().split(' ')[0]
+  shop.serRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(1).html().split(' ')[0]
+  shop.expRating = $('#J_shopH5Desc .shopdes .shopasess li .red').eq(2).html().split(' ')[0]
   item.shop = shop
 
 
